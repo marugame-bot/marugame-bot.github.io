@@ -1,0 +1,22 @@
+.wrap {
+  width: 100vw;
+  height: 100vh;
+}
+
+.top, .bottom {
+  height: 25%;
+  background: #331B25;
+  position: relative;
+}
+
+.middle {
+  height: 50%;
+  box-shadow: 0 0 0 20px rgba(255,255,255,0.3);
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/fabric_of_squares_gray.png");
+  position: relative;
+  z-index: 100;
+}
+
+.vegas-timer-progress {
+  background: #FF7760;
+}

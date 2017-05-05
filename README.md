@@ -1,0 +1,1 @@
+# marugame-bot.github.io
