@@ -51,7 +51,7 @@
   flex-direction: row;
 }
 
-.button-subtext {
+.subtext-style {
   font-size: 12px;
   color: #666;
   text-align: center;
@@ -125,4 +125,16 @@
 .button:hover::after {
   width: 0;
   background-color: #F691BB;
+}
+
+.remodal h4 {
+  font-size: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  margin-bottom: 25px;
+}
+
+.famous-quote {
+  position: relative;
+  z-index: 10000;
 }

@@ -6,9 +6,11 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="assets/styles/vegas.min.css">
   <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="stylesheet" href="assets/styles/remodal.css">
+  <link rel="stylesheet" href="assets/styles/remodal-default-theme.css">
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap remodal-bg">
     <div class="top"></div>
     <div class="content">
       <div class="content-inner">
@@ -17,21 +19,48 @@
             <img src="assets/images/logo.png" alt="" height="200">
           </div>
           <div class="content-left-bottom">
-            <p>このBotを登録すると、丸亀の日(釜揚げうどん<span class="yen-highlight">140円</span>)の前日に</p>
-            <p>自動でお知らせツイートをします</p></div>
+            <p>このBotを登録すると、丸亀の日(釜揚げうどん<span class="yen-highlight">140円</span>)の</p>
+            <p>当日0時に自動でお知らせツイートをします</p>
+          </div>
         </div>
         <div class="content-right">
           <a class="button" href="https://marugame-bot.herokuapp.com/register">
             登録
           </a>
-          <p class="button-subtext">お前が丸亀BOTになるんだよ！</p>
+          <p class="subtext-style">お前が丸亀BOTになるんだよ！</p>
         </div>
       </div>
     </div>
     <div class="bottom"></div>
   </div>
+  <div class="remodal" data-remodal-id="success">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h4>丸亀BOT登録完了</h4>
+    <p>丸亀BOTに登録完了しました。ありがとうございます。</p>
+    <p>今後、丸亀の日の前日にその旨をツイートさせていただきます。</p>
+    <p>釜揚げうどんを食べに行きましょう！</p>
+    <p></p>
+    <p class="subtext-style">登録を解除したい場合、Twitter公式ページから連携アプリを解除してください。</p>
+    <p></p>
+    <hr>
+    <p></p>
+    <p>Twitterでシェアしますか？</p>
+    <br>
+    <button data-remodal-action="confirm" class="remodal-confirm" onclick="location.href='https://twitter.com/intent/tweet?text=%E4%B8%B8%E4%BA%80BOT%E3%81%AB%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%EF%BC%81%20%F0%9F%8D%B2&url=https://marugame-bot.github.io/&related=bot_marugame&via=bot_marugame'">ツイートする</button>
+    <button data-remodal-action="close" class="remodal-close">ツイートしない</button>
+  </div>
+  <div class="remodal" data-remodal-id="failure">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h4>丸亀BOT登録失敗</h4>
+    <p>丸亀BOTに登録できませんでした。</p>
+    <br>
+    <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+  </div>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+  <!-- <script src="assets/scripts/fx.js"></script> -->
   <script src="assets/scripts/vegas.min.js"></script>
+  <script src="assets/scripts/remodal.min.js"></script>
   <script src="assets/scripts/main.js"></script>
 </body>
 </html>
