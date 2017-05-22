@@ -13,8 +13,7 @@ $(() => {
     transition: 'blur',
     animation: 'kenburnsRight',
     overlay: 'assets/images/overlays/08.png',
-    timer: false,
-    duration: 4200
+    timer: false
   });
   $('.bottom').vegas({
     slides: [
