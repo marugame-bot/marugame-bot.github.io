@@ -138,3 +138,11 @@
   position: relative;
   z-index: 10000;
 }
+
+.remodal p {
+  line-height: 1.618;
+}
+
+.spacer-h30 {
+  height: 30px;
+}
